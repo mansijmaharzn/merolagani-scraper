@@ -28,11 +28,7 @@ def parse_company_general_details(soup):
             break
 
         td_text = td.get_text(strip=True)
-        if td_text:
-            print(f"{th.text.strip()}: {td_text}")
-        else:
-            print("Invalid Symbol")
-            break
+        print(f"{th.text.strip()}: {td_text}")
 
 
 def main():
